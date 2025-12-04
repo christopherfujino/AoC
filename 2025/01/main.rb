@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 pos = 50
 number_of_zeroes = 0
 
