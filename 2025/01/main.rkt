@@ -29,4 +29,4 @@
         (cons 50 0)
         lines)
        ])
-  (cdr pos_zeroes))
+  (printf "Number of zeroes: ~a\n" (cdr pos_zeroes)))

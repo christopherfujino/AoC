@@ -15,7 +15,6 @@ File.read('input.txt').split("\n").each do |cmd|
     raise "Unreachable: #{direction}"
   end
   pos = pos % 100
-  puts "After #{cmd} position is now #{pos}"
   if pos == 0
     number_of_zeroes += 1
   end
