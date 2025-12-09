@@ -13,12 +13,10 @@
         (string=? first_half second_half)))))
       #t))
 
-(define ids
-  ((compose1 (lambda (raw) (string-split raw ",")) port->string open-input-file)
-    "input.txt"))
-
-(define invalid_ids
-  (foldl
+(let ([ids
+       ((compose1 (lambda (raw) (string-split raw ",")) port->string open-input-file)
+    "input.txt")]
+      [invalid_ids (foldl
     (lambda (invalid_ids id_range)
       (let ([id_range (string-split id_range "-")])
         (if ((not (= (length id_range) 2)))
@@ -36,9 +34,14 @@
                                               )])
 
                                       )
-                                    ))]))
+                                    ))])
+                     (printf "TODO: implement iter body\n")
+                     )
                    )
-            ))))
+            )))
     null ; i.e. an empty list
     ids
-    )
+    )]
+      )
+
+  )
