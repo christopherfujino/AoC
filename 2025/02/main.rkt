@@ -46,8 +46,7 @@
          null ; i.e. an empty list
          ids)
         ]
-      [sum (foldl (lambda (cur sum) (+ sum cur)) 0 invalid_ids)]
-       )
+       [sum (foldl (lambda (cur sum) (+ sum cur)) 0 invalid_ids)])
 
   (printf "~a\n" sum)
   )
