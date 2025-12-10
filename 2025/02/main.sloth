@@ -1,0 +1,13 @@
+#!/usr/bin/env sloth
+
+func validate(i) {
+  let str = String(i)
+  let len = str.length
+  if len % 2 == 0 {
+    let halfLen = (len / 2).floor()
+  } else {
+    true
+  }
+}
+
+validate(42)
